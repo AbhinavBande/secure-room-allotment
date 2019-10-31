@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>VIT | Room Allotment</title>
+    <link rel="icon" href="assets/vit-logo.png" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="bootstrap-4.3.1-dist/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="bootstrap-4.3.1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="allotment-style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans|Manjari|Nunito+Sans|Oxygen|Roboto+Mono|Slabo+27px&display=swap" rel="stylesheet">
+</head>
+<body class="allotment-body" onload="startTime()">
+<nav class="navbar navbar-expand-lg nav-custom">
+        <div class="col-md-6 col-sm-6">
+            <a class="navbar-brand" href="https://vit.ac.in">
+                <img src="assets/vit_white.png" width="250px" height="100px" class="d-inline-block align-top nav-logo">
+            </a>
+        </div>
+        <div class="col-md-6 col-sm-6">
+            <div class="nav-header">
+                <p>VIT HOSTEL MOCK ROOM ALLOTMENT</p>
+                <p>2019-2020</p>
+            </div>
+        </div>
+</nav>
+<div class="row stu-info">
+    <div class="col-md-3 col-sm-12">
+        <p class="stu-det" id="stu-name">Vishnu Charan</p>
+    </div>
+    <div class="col-md-3 col-sm-12">
+        <p class="stu-det" id="stu-regno">17BCI0090</p>
+    </div>
+    <div class="col-md-4 col-sm-12">
+        <p class="stu-det" id="stu-course">Computer Science Spec. Information Security</p>
+    </div>
+    <div class="col-md-2 col-sm-12" style="text-align: center">
+        <input class="logout-btn btn btn-primary" type="button" id="logout" value="LOGOUT" onclick="logout()">
+    </div>
+</div>
+<!--<div class="row">-->
+<!--    <div class="col-md-10 col-sm-12">-->
+<!--        <div class="card rank">-->
+<!--            <div class="card-body">-->
+<!--                <h5 class="card-title">YOUR RANK</h5>-->
+<!--                <hr>-->
+<!--                <p class="card-text" id="stu-rank">1</p>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--    <div class="col-md-2 col-sm-12">-->
+<!--        <div class="card rank">-->
+<!--            <div class="card-body">-->
+<!--                <p class="card-title" id="put-time"></p>-->
+<!--                <hr>-->
+<!--                <p class="card-text" id="put-date"></p>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</div>-->
+<div class="res-content">
+    <div class="card-deck">
+        <div class="card c1">
+            <div class="card-body">
+                <h5 class="card-title">CGPA</h5>
+                <hr>
+                <p class="card-text" id="stu-cgpa">8.00</p>
+            </div>
+        </div>
+        <div class="card c1">
+            <div class="card-body">
+                <h5 class="card-title">RANK</h5>
+                <hr>
+                <p class="card-text" id="stu-rank">1</p>
+            </div>
+        </div>
+        <div class="card c1">
+            <div class="card-body">
+                <p class="card-title" id="put-time"></p>
+                <hr>
+                <p class="card-text" id="put-date"></p>
+            </div>
+        </div>
+    </div>
+</div>
+<br>
+<div class="option-content">
+    <div class="card-deck">
+        <div class="card">
+            <div class="card-header">OPTION 1</div>
+            <div class="card-body">
+                <form id="opt1-form" name="form1">
+                    <p class="card-text">Choose your class : </p>
+                    <div class="form-grp">
+                        <input type="radio" id="f1-ac-class" value="AC" name="class" onclick="acContent()"><b class="ip1">AC</b>
+                        <br>
+                        <input type="radio" id="f1-nac-class" value="NAC" name="class" onclick="nacContent()"><b class="ip1">NON-AC</b>
+                    </div>
+                    <hr>
+                    <p class="card-text">Choose your room strength : </p>
+                    <div class="form-grp">
+                        <label>
+                            <select class="ip2" id="f1-room-str">
+                                <option name="room-str" value="1">1 - Bed</option>
+                                <option name="room-str" value="2">2 - Bed</option>
+                                <option name="room-str" value="3">3 - Bed</option>
+                                <option name="room-str" value="4">4 - Bed</option>
+                                <option name="room-str" value="6">6 - Bed</option>
+                            </select>
+                        </label>
+                    </div>
+                    <hr>
+                    <p class="card-text">Choose your block : </p>
+                    <div class="form-grp">
+                        <label>
+                            <select class="ip2" id="f1-block">
+                                <option name="block-name" value="A" selected>A</option>
+                                <option name="block-name" value="B">B</option>
+                                <option name="block-name" value="C">C</option>
+                                <option name="block-name" value="D">D</option>
+                                <option name="block-name" value="E">E</option>
+                                <option name="block-name" value="A">F</option>
+                                <option name="block-name" value="G">G</option>
+                                <option name="block-name" value="H">H</option>
+                                <option name="block-name" value="J">J</option>
+                                <option name="block-name" value="K">K</option>
+                                <option name="block-name" value="L">L</option>
+                                <option name="block-name" value="M">M</option>
+                                <option name="block-name" value="N">N</option>
+                                <option name="block-name" value="P">P</option>
+                                <option name="block-name" value="Q">Q</option>
+                            </select>
+                        </label>
+                    </div>
+                    <hr>
+                    <div class="form-grp">
+                        <input type="submit" id="f1-submit" class="btn btn-primary" value="Submit">
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="card opt-card">
+            <div class="card-header">OPTION 2</div>
+            <div class="card-body">
+                <form id="opt2-form" name="form2">
+                    <p class="card-text">Choose your class : </p>
+                    <div class="form-grp">
+                        <input type="radio" id="f2-ac-class" value="AC" name="class" onclick="acContent()"><b class="ip1">AC</b>
+                        <br>
+                        <input type="radio" id="f2-nac-class" value="NAC" name="class" onclick="nacContent()"><b class="ip1">NON-AC</b>
+                    </div>
+                    <hr>
+                    <p class="card-text">Choose your room strength : </p>
+                    <div class="form-grp">
+                        <label>
+                            <select class="ip2" id="f2-room-str">
+                                <option name="room-str" value="1">1 - Bed</option>
+                                <option name="room-str" value="2">2 - Bed</option>
+                                <option name="room-str" value="3">3 - Bed</option>
+                                <option name="room-str" value="4">4 - Bed</option>
+                                <option name="room-str" value="6">6 - Bed</option>
+                            </select>
+                        </label>
+                    </div>
+                    <hr>
+                    <p class="card-text">Choose your block : </p>
+                    <div class="form-grp">
+                        <label>
+                            <select class="ip2" id="f2-block">
+                                <option name="block-name" value="A" selected>A</option>
+                                <option name="block-name" value="B">B</option>
+                                <option name="block-name" value="C">C</option>
+                                <option name="block-name" value="D">D</option>
+                                <option name="block-name" value="E">E</option>
+                                <option name="block-name" value="A">F</option>
+                                <option name="block-name" value="G">G</option>
+                                <option name="block-name" value="H">H</option>
+                                <option name="block-name" value="J">J</option>
+                                <option name="block-name" value="K">K</option>
+                                <option name="block-name" value="L">L</option>
+                                <option name="block-name" value="M">M</option>
+                                <option name="block-name" value="N">N</option>
+                                <option name="block-name" value="P">P</option>
+                                <option name="block-name" value="Q">Q</option>
+                            </select>
+                        </label>
+                    </div>
+                    <hr>
+                    <div class="form-grp">
+                        <input type="submit" id="f2-submit" class="btn btn-primary" value="Submit">
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="card opt-card">
+            <div class="card-header">OPTION 3</div>
+            <div class="card-body">
+                <form id="opt3-form" name="form3">
+                    <p class="card-text">Choose your class : </p>
+                    <div class="form-grp">
+                        <input type="radio" id="f3-ac-class" value="AC" name="class" onclick="acContent()"><b class="ip1">AC</b>
+                        <br>
+                        <input type="radio" id="f3-nac-class" value="NAC" name="class" onclick="nacContent()"><b class="ip1">NON-AC</b>
+                    </div>
+                    <hr>
+                    <p class="card-text">Choose your room strength : </p>
+                    <div class="form-grp">
+                        <label>
+                            <select class="ip2" id="f3-room-str">
+                                <option name="room-str" value="1">1 - Bed</option>
+                                <option name="room-str" value="2">2 - Bed</option>
+                                <option name="room-str" value="3">3 - Bed</option>
+                                <option name="room-str" value="4">4 - Bed</option>
+                                <option name="room-str" value="6">6 - Bed</option>
+                            </select>
+                        </label>
+                    </div>
+                    <hr>
+                    <p class="card-text">Choose your block : </p>
+                    <div class="form-grp">
+                        <label>
+                            <select class="ip2" id="f3-block">
+                                <option name="block-name" value="A" selected>A</option>
+                                <option name="block-name" value="B">B</option>
+                                <option name="block-name" value="C">C</option>
+                                <option name="block-name" value="D">D</option>
+                                <option name="block-name" value="E">E</option>
+                                <option name="block-name" value="A">F</option>
+                                <option name="block-name" value="G">G</option>
+                                <option name="block-name" value="H">H</option>
+                                <option name="block-name" value="J">J</option>
+                                <option name="block-name" value="K">K</option>
+                                <option name="block-name" value="L">L</option>
+                                <option name="block-name" value="M">M</option>
+                                <option name="block-name" value="N">N</option>
+                                <option name="block-name" value="P">P</option>
+                                <option name="block-name" value="Q">Q</option>
+                            </select>
+                        </label>
+                    </div>
+                    <hr>
+                    <div class="form-grp">
+                        <input type="submit" id="f3-submit" class="btn btn-primary" value="Submit">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row" style="width: 100%">
+    <div class="col"></div>
+    <div class="col-md-6" style="text-align: center">
+        <button id="proceed" class="btn btn-primary btn-lg fin-btn" onclick="proceed()">Proceed</button>
+    </div>
+    <div class="col"></div>
+</div>
+<br>
+<script type="text/javascript" src="allotment-script.js"></script>
+</body>
+</html>

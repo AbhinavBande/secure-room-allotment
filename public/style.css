@@ -1,0 +1,94 @@
+body.signin-body{
+    background-color: #ECF0F1;
+}
+
+body.inst-body{
+    background-color: #ECF0F1;
+}
+
+.container.signin-container{
+    margin-top: 5%;
+}
+
+.container.inst-container{
+    margin-top: 5%;
+}
+
+img.signin-img{
+    padding-bottom: 15px;
+    display: block;
+    margin:auto;
+    height: 150px;
+    width: 150px;
+}
+
+.signin-header{
+    display: block;
+    font-size: x-large;
+    text-align: center;
+    padding-bottom: 30px;
+    font-family: inherit;
+    margin-top: 5px;
+}
+
+.signin-form{
+    padding-bottom: 20px;
+    max-width: 500px;
+    margin: auto;
+}
+
+.signin-btn{
+    display: block;
+    margin: auto;
+}
+
+.signin-help{
+    display: block;
+    margin: auto;
+    text-align: center;
+    font-family: inherit;
+    color: #2874A6;
+}
+
+.nav-custom{
+    background-color: #2874A6;
+}
+
+.btn-primary{
+    background-color: #2874A6;
+}
+
+.card-header{
+    text-align: center;
+    font-weight: bold;
+    font-size: large;
+    color: #E74C3C;
+    letter-spacing: 2px;
+}
+
+.card-inst{
+    outline: #1d2124;
+}
+
+.instructions{
+    margin-top: 40px;
+    display: block;
+}
+
+.chk-box{
+    float: left;
+}
+
+.btn-goback{
+    float: right;
+}
+
+.btn-proceed{
+    float: left;
+    background-color: #2ECC71;
+    border-color: #2ECC71;
+}
+
+.btn-proceed:hover{
+    background-color:#28B463;
+}

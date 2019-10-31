@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>VIT | Instructions</title>
+    <link rel="icon" href="assets/vit-logo.png" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="bootstrap-4.3.1-dist/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="bootstrap-4.3.1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Pacifico|Satisfy|Shadows+Into+Light|Source+Code+Pro&display=swap" rel="stylesheet">
+</head>
+<body class="inst-body">
+<nav class="navbar navbar-expand-lg nav-custom">
+    <a class="navbar-brand" href="https://vit.ac.in">
+        <img src="assets/vit_white.png" width="150px" height="50px" class="d-inline-block align-top">
+    </a>
+</nav>
+<div class="container inst-container">
+    <div class="row">
+        <div class="col"></div>
+        <div class="col-sm-12 col-md-8">
+            <div class="card card-inst">
+                <div class="card-body">
+                    <div class="card-header">
+                        Instructions
+                    </div>
+                    <form id="instruction-form" name="inst-form" onsubmit="inst-agree();">
+                        <div class="form-group instructions">
+                            1. You will be logged out of the session if there is an inactivity of 5 minutes.
+                            <br>
+                            2. Please use browsers such as <b>Google Chrome</b>, <b>Mozilla Firefox</b> or <b>Safari</b>.
+                            <br>
+                            3. If you are logged out of the session, please close the browser and login again.
+                            <br>
+                            4. Please dont share your <b>credentials with anyone</b>.
+                        </div>
+                        <div class="form-group form-check">
+                            <input type="checkbox" class="form-check-input chk-box" id="read-inst" required>
+                            <label class="form-check-label" for="read-inst"><b>I have read the instructions</b></label>
+                        </div>
+                        <div class="form-group">
+                            <input type="submit" name="submit" class="btn btn-primary btn-proceed" value="Proceed">
+                        </div>
+                    </form>
+                    <button class="btn btn-danger btn-goback" onclick="goback()">Go Back</button>
+                </div>
+            </div>
+        </div>
+        <div class="col"></div>
+    </div>
+</div>
+<script type="text/javascript" src="inst-script.js"></script>
+</body>
+</html>

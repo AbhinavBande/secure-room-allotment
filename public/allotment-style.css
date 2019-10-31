@@ -1,0 +1,103 @@
+body.allotment-body{
+    background-color: #F0F3F4;
+}
+
+.nav-custom{
+    background-color: #2874A6;
+}
+
+.nav-header{
+    font-size: larger;
+    font-weight: bold;
+    color: #D0D3D4;
+    padding: 20px;
+    text-align: center;
+    letter-spacing: 1.5px;
+    font-family: 'Manjari', serif;
+    float: right;
+}
+
+.stu-info{
+    background-color: #34495E;
+    margin: auto;
+    padding-top: 15px;
+    width: 100%;
+}
+
+.stu-det{
+    font-family: 'Nunito Sans', sans-serif;
+    color: #ECF0F1;
+    font-size: large;
+    text-align: center;
+}
+
+.logout-btn{
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.c1{
+    background-color: #E5E8E8;
+}
+
+.card-title{
+    color:#283747;
+    font-family: 'Nunito Sans', sans-serif;
+    text-align: center;
+}
+
+.card-text{
+    color:#283747;
+    font-family: 'Nunito Sans', monospace;
+    text-align: center;
+    font-size: larger;
+}
+
+.ch1{
+    background-color: #F0F3F4;
+}
+
+.ip1{
+    font-family: 'Nunito Sans', monospace;
+}
+
+.ip2{
+    font-family: 'Nunito Sans', monospace;
+    width: 100px;
+    padding: 5px;
+    border-radius: 7px;
+}
+
+.res-content{
+    padding: 2em;
+}
+
+.option-content{
+    padding: 2em;
+}
+
+.form-grp{
+    text-align: center;
+}
+
+.fin-btn{
+    background-color:#28B463;
+    border-color: #58D68D;
+}
+
+.fin-btn:hover{
+    background-color: #239B56;
+}
+
+.notice{
+    width: 100%;
+    text-align: center;
+    color: #EC7063;
+}
+
+@media screen and (max-width: 700px){
+    .nav-logo{
+        width: 100%;
+    }
+
+}
+

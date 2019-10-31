@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>VIT | Home</title>
+    <link rel="icon" href="assets/vit-logo.png" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="bootstrap-4.3.1-dist/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="bootstrap-4.3.1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Pacifico|Satisfy|Shadows+Into+Light|Source+Code+Pro&display=swap" rel="stylesheet">
+</head>
+<body class="signin-body">
+<nav class="navbar navbar-expand-lg nav-custom">
+    <a class="navbar-brand" href="https://vit.ac.in">
+        <img src="assets/vit_white.png" width="150px" height="50px" class="d-inline-block align-top">
+    </a>
+</nav>
+<div class="container signin-container">
+    <div class="row">
+        <div class="col"></div>
+        <div class="col-md-6 col-sm-12">
+            <div class="card">
+                <div class="card-body">
+                    <img src="assets/vit-logo.png" class="img-fluid signin-img">
+                    <div class="signin-header">Sign in</div>
+                    <form class="sign-form" onsubmit="return validate();" name="signin-form" method="post">
+                        <div class="form-group">
+                            <label for="signin-username">Username</label>
+                            <input type="text" onkeyup="this.value = this.value.toUpperCase()" class="form-control" id="signin-username" name="username" placeholder="Your username here!" title="Enter the Username" required>
+                            <small id="emailHelp" class="form-text text-muted">Don't share your credentials with anyone else.</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="signin-password">Password</label>
+                            <input type="password" class="form-control" id="signin-password" name="pass" placeholder="Your secret here!" title="Enter the password" required>
+                        </div>
+                        <p class="form-text signin-help" style="color:red;">{{status}}</p><br>
+                        <button type="submit" class="btn btn-primary btn-block btn-lg" name="submit">Sign In</button>
+                        <br>
+                        <small class="form-text text-muted signin-help">Forgot Password?</small>
+                        <a href="#" class="signin-help">Need Help</a>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="col"></div>
+    </div>
+</div>
+<br>
+<script type="text/javascript" src="index-script.js"></script>
+</body>
+</html>
