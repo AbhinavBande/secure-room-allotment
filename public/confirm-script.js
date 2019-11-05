@@ -20,7 +20,7 @@ function checkTime(i) {
 }
 
 function logout() {
-    window.location = "/";
+    window.location = "/logout";
 }
 
 function notConfirm() {

@@ -27,13 +27,13 @@
 </nav>
 <div class="row stu-info">
     <div class="col-md-3 col-sm-12">
-        <p class="stu-det" id="stu-name">Abhinav Bande</p>
+        <p class="stu-det" id="stu-name">{{name}}</p>
     </div>
     <div class="col-md-3 col-sm-12">
-        <p class="stu-det" id="stu-regno">17BCI0150</p>
+        <p class="stu-det" id="stu-regno">{{Regno}}</p>
     </div>
     <div class="col-md-4 col-sm-12">
-        <p class="stu-det" id="stu-course">Computer Science Spec. Information Security</p>
+        <p class="stu-det" id="stu-course">{{dept}}</p>
     </div>
     <div class="col-md-2 col-sm-12" style="text-align: center">
         <input class="logout-btn btn btn-primary" type="button" id="logout" value="LOGOUT" onclick="logout()">
@@ -45,14 +45,14 @@
             <div class="card-body">
                 <h5 class="card-title">CGPA</h5>
                 <hr>
-                <p class="card-text" id="stu-cgpa">8.00</p>
+                <p class="card-text" id="stu-cgpa">{{cgpa}}</p>
             </div>
         </div>
         <div class="card c1">
             <div class="card-body">
                 <h5 class="card-title">RANK</h5>
                 <hr>
-                <p class="card-text" id="stu-rank">1</p>
+                <p class="card-text" id="stu-rank">{{rank}}</p>
             </div>
         </div>
         <div class="card c1">
